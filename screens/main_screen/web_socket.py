@@ -16,7 +16,7 @@ class WebSocketClient(QObject):
 
     def connect(self):
         # localhost:8000
-        url = QUrl(f"ws://28dc-138-124-92-226.ngrok-free.app/ws?token={self.token}")
+        url = QUrl(f"wss://28dc-138-124-92-226.ngrok-free.app/ws?token={self.token}")
         print()
         self.socket.open(url)
 
